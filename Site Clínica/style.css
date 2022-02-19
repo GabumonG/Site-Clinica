@@ -118,77 +118,57 @@
   /*ÁREAS DE ATENDIMENTO*/
   @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Open+Sans:wght@300&display=swap');
 
-  .container-fluid{
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 100px;
+  h1 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.5rem;
   }
-
-  .container-fluid h2{
-    color: hotpink;
+  
+  .accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+  .accordion-item {
+    background-color: #fff;
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  }
+  .accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
     position: relative;
-    width: 23rem;
+    cursor: pointer;
   }
-
-  .container-fluid h2::after{
-      content: "";
-      position: absolute;
-      bottom: 0;
-      right: 12px;
-      width: 67px;
-      height: 2px;
-      background-color: hotpink;
+  .accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
   }
-
-  .accordion{
-      width: 100%;
-      padding: 0 5px;
-      border: 2px solid #6db5ff;
-      cursor: pointer;
-      border-radius: 50px;
-      display: flex;
-      margin: 10px 0;
-      align-items: center;
+  .accordion-item-header.active::after {
+    content: "\2212";
   }
-
-  .accordion .icon{
-      margin: 0 10px 0 0;
-      width: 30px;
-      height: 30px;
-      background: url(icon.png) no-repeat 0px 0px #6db5ff; /*estava respectivamente 8 e 7*/
-      border-radius: 50%;
-      float: left;
-      transition: all .5s ease-in;
+  .accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
   }
-
-  .accordion h5{
-      font-size: 22px;
-      margin: 0;
-      padding: 3px 0 0 0;
-      font-weight: normal;
-      color: #1f5c9a;
+  .accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
   }
-
-  .active .icon{
-      background: url(icon2.png) no-repeat 8px -25px #6db5ff;
-  }
-
-  .active {
-      background-color: #6db5ff;
-      color: fff;
-  }
-
-  .active {
-      color: #ffc100;
-  }
-
-  .panel{
-      padding: 0 15px;
-      border-left: 1px solid #6db5ff;
-      margin-left: 25px;
+  
+  @media(max-width:767px) {
+    html {
       font-size: 14px;
-      text-align: justify;
-      overflow: hidden;
-      max-height: 0px;
-      transition: all .5s ease-in;
+    }
   }

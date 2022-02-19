@@ -44,17 +44,27 @@ class MobileNavbar {
   mobileNavbar.init();
 
   //collapse/expand text
-  var acc = document.getElementsByClassName('accordion');
-  var i;
-  var len = acc.length;
-  for(i = 0; i < len; i++) {
-      acc[i].addEventListener('click', function() {
-          this.classList.toggle('active');
-          var panel = this.nextElementSibling;
-          if(panel.style.maxHeight){
-              panel.style.maxHeight = null;
-          } else {
-              panel.style.maxHeight = panel.scrollHeight + '300px';
-          }
-      })
-    }
+  const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+  accordionItemHeaders.forEach(accordionItemHeader => {
+    accordionItemHeader.addEventListener("click", event => {
+      
+      // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+      
+      // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+      // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+      //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+      //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+      // }
+  
+      accordionItemHeader.classList.toggle("active");
+      const accordionItemBody = accordionItemHeader.nextElementSibling;
+      if(accordionItemHeader.classList.contains("active")) {
+        accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+      }
+      else {
+        accordionItemBody.style.maxHeight = 0;
+      }
+      
+    });
+  });
