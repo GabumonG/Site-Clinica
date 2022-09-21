@@ -178,8 +178,8 @@
         </div>
     </section>
 
-    <!--blog
-    <section id="blog">
+    <!--blog-->
+    <!--<section id="blog">
         <h1>BLOG</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -191,7 +191,7 @@
             commodo consequat. Duis aute irure
             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
             occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </section> -->
+    </section>-->
 
     <!--profissionais-->
     <section id="profissionais">
@@ -281,7 +281,7 @@
                         <div class="row50">
                             <div class="inputBox">
                                 <span>E-mail</span>
-                                <input type="text" placeholder="Digite seu e-mail...">
+                                <input type="text" plac eholder="Digite seu e-mail...">
                             </div>
                             <div class="inputBox">
                                 <span>Telefone</span>
@@ -310,7 +310,11 @@
                 <div class="infoBox">
                     <div>
                         <span><i class="fa-solid fa-location-dot"></i></span>
-                        <p> R. das Papoulas, 188 - Cidade Jardim I, Americana - SP, 13466-620</p>
+                        <p>Matriz: R. das Papoulas, 188 - Cidade Jardim I, Americana - SP, 13466-620</p>
+                    </div>
+                    <div>
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <p>Filial: R. Francisco Lapierre, 265 - Vila São Pedro, Americana - SP, 13466-510</p>
                     </div>
                     <div>
                         <span><i class="fa-solid fa-envelope"></i></span>
@@ -318,23 +322,27 @@
                     </div>
                     <div>
                         <span><i class="fa-solid fa-phone"></i></span>
-                        <a href="tel:+551997028040"> +55 (19) 99702-8040</a>
+                        <a href="tel:+551934055005"> +55 (19) 3405-5005</a>
                     </div>
                     <div>
                         <span><i class="fa-brands fa-whatsapp"></i></span>
-                        <a href="tel:+551934055005"> +55 (19) 3405-5005</a>
+                        <a href="tel:+551997028040"> +55 (19) 99702-8040</a>
                     </div>
-                    <!--Redes sociais links-->
-                    <ul class="sci">
-                       <!-- <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li> -->
-                        <li><a href="https://www.instagram.com/girassolpsicologia/"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
+                    <div>
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                        <a href="https://www.instagram.com/girassolpsicologia/"> @girassolpsicologia</a>
+                    </div>
+                    <br>
+                    <p onClick="mostrar('exemplo1')">*Clique aqui para alternar o endereço no mapa</p>
                 </div>
             </div>
 
             <!--  Map  -->
-            <div class="contact map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.1898386509906!2d-47.33352399999999!3d-22.7583351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8997856617493%3A0x4ef6beb99fa28518!2sR.%20das%20Papoulas%2C%20188%20-%20Cidade%20Jardim%20I%2C%20Americana%20-%20SP%2C%2013466-620!5e0!3m2!1spt-BR!2sbr!4v1656676494833!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+            <div class="contact map" id="exemplo2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.1898386509906!2d-47.33352399999999!3d-22.7583351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8997856617493%3A0x4ef6beb99fa28518!2sR.%20das%20Papoulas%2C%20188%20-%20Cidade%20Jardim%20I%2C%20Americana%20-%20SP%2C%2013466-620!5e0!3m2!1spt-BR!2sbr!4v1656676494833!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact map" id="exemplo1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.258687848073!2d-47.336441648936706!3d-22.755779138148977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c899792b5b7221%3A0x30d3680f3b990b2a!2sR.%20Francisco%20Lapierre%2C%20265%20-%20Vila%20Sao%20Pedro%2C%20Americana%20-%20SP%2C%2013466-510!5e0!3m2!1spt-BR!2sbr!4v1657759645715!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -359,11 +367,10 @@
               </div>
             </div>
         </div>
-      </body>
     </section>
 
     <!--rodape-->
-    <footer class="footer-distributed">
+    <!--<footer class="footer-distributed">
 
         <div class="footer-left">
             <h3>Clinica<span>Girasol</span></h3>
@@ -372,7 +379,7 @@
                 <a href="#">Home</a> |
                 <a href="#">About</a> |
                 <a href="#">Contact</a> |
-             <!--  <a href="#">Blog</a>--> 
+                <a href="#">Blog</a>
             </p>
 
             <p class="footer-company-name">Copyright © 2022 <strong>Clinica Girasol</strong> All rights reserved</p>
@@ -396,11 +403,11 @@
         </div>
         <div class="footer-right">
             <p class="footer-company-about">
-               <!-- <span>Sobre a clinica</span>
-                <strong></strong> -->
+                <span>Sobre a clinica</span>
+                <strong></strong>
             </p>
         </div>
-    </footer>
+    </footer>-->
 
     <script src="script.js"></script>
 </body>

@@ -24,6 +24,14 @@ a:hover {
     letter-spacing: 4px;
 }
 
+
+/* 20/09/2022 - ALTERAÇÃO */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #d6950a;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -70,7 +78,7 @@ main {
         top: 8vh;
         right: 0;
         width: 50vw;
-        height: 92vh;
+        height: 30vh;
         background: #ffc100;
         flex-direction: column;
         align-items: center;
@@ -118,7 +126,7 @@ main {
 	overflow: hidden;
 }
 #slider figure {
-	position: relative;
+	
 	width: 500%;
 	margin: 0;
 	left: 0;
@@ -298,7 +306,7 @@ h1 {
     background: #fff;
     margin: 10px;
     overflow: hidden;
-    position: relative;
+    /*position: relative;*/
     transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 
@@ -388,6 +396,7 @@ h1 {
 
 .map {
     grid-area: map;
+    visibility: visible;
 }
 
 .contact {
@@ -412,7 +421,6 @@ h1 {
     font-size: 1.4em;
     margin-bottom: 10px;
 }
-
 
 /* FORM */
 
@@ -515,6 +523,12 @@ h1 {
     color: #111;
     text-decoration: none;
     font-size: 1.1em;
+}
+
+.info .infoBox p {
+    color: #111;
+    font-size: 0.9em;
+    cursor: pointer;
 }
 
 .sci {
