@@ -203,7 +203,7 @@ h1 {
     font-weight: bold;
     display: flex;
     align-items: center;
-    position: relative;
+    /*position: relative;*/
     cursor: pointer;
 }
 
@@ -368,7 +368,7 @@ h1 {
 /*AREA DOS CONTATOS*/
 
 #contactUs {
-    position: relative;
+    /*position: relative;*/
     width: auto;
     padding: 40px 100px;
     background-color: #fff;
@@ -406,7 +406,7 @@ h1 {
 }
 
 .box {
-    position: relative;
+    /*position: relative;*/
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 5fr 4fr;
@@ -425,7 +425,7 @@ h1 {
 /* FORM */
 
 .formBox {
-    position: relative;
+    /*position: relative;*/
     width: 100%;
 }
 
